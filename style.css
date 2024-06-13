@@ -1,0 +1,31 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.head{
+    text-align: center;
+    margin: 20px;
+}
+div{
+    text-align: center;
+    margin: 20px; 
+}
+input{
+    width: 200px;
+    padding: 14px 16px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 16px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
