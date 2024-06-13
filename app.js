@@ -9,6 +9,7 @@ form.addEventListener('submit', (e)=>{
     axios(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${input.value}?key=MPSJFVSK5GBJUECH7TS82XAVL
 `)
    .then((res)=>{
+    div.innerHTML = ''
     console.log(res.data)
     div.innerHTML += `
     <h1>${res.data.address}</h1>

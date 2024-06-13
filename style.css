@@ -31,10 +31,9 @@ button{
 }
 
 .main-div{
-    margin: 0 auto;
-    text-align: center;
     margin: 20px;
     padding: 20px;
     border-radius: 4px;
-    
+    width: 50%;
+    margin: 0% auto;
 }
