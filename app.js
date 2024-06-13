@@ -14,6 +14,7 @@ form.addEventListener('submit', (e)=>{
     <h1>${res.data.address}</h1>
     <h2>Latitude : ${res.data.latitude}</h2>
     <h2>Longitude : ${res.data.longitude}</h2>
+    <h2>${res.data.currentConditions.cloudcover}</h2>
     `
     })
    .catch((error)=>{
