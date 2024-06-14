@@ -13,22 +13,13 @@ form{
     margin: 20px; 
 }
 input{
-    width: 200px;
+    width: 700px;
     padding: 14px 16px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-button{
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 16px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
 .main-div{
     margin: 20px;
