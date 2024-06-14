@@ -6,19 +6,12 @@ const div = document.querySelector('div')
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
-    axios(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${input.value}?key=MPSJFVSK5GBJUECH7TS82XAVL
-`)
+    axios(`http://api.weatherapi.com/v1/current.json?key=b90421cd7596432bbb2144327241406&q=${input.value}&aqi=no`)
    .then((res)=>{
     div.innerHTML = ''
     console.log(res.data)
     div.innerHTML += `
-    <h1>${res.data.address}</h1>
-    <h2>Latitude : ${res.data.latitude}</h2>
-    <h2>Longitude : ${res.data.longitude}</h2>
-    <h3>Cloudcover : ${res.data.currentConditions.cloudcover}</h3>
-    <h3>Conditions : ${res.data.currentConditions.conditions}</h3>
-    <h3>Datetime : ${res.data.currentConditions.datetime}</h3>
-    <h3>${res.data.currentConditions.icon}</h3>
+    <h1>${res.data.location.name}</h1>
     `
     })
    .catch((error)=>{
