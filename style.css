@@ -13,18 +13,21 @@ form{
     margin: 20px; 
 }
 input{
-    width: 700px;
+    width: 500px;
     padding: 14px 16px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+.bn{
+    padding: 14px 20px;
 
-.main-div{
+}
+
+.form-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 20px;
-    padding: 20px;
-    border-radius: 4px;
-    width: 250px;
-    margin: 0% auto;
 }
