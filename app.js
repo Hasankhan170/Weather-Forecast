@@ -8,9 +8,8 @@ form.addEventListener('submit', (e)=>{
     e.preventDefault();
     axios(`http://api.weatherapi.com/v1/current.json?key=b90421cd7596432bbb2144327241406&q=${input.value}&aqi=no`)
    .then((res)=>{
-    div.innerHTML = ''
     console.log(res.data)
-    div.innerHTML += `
+    div.innerHTML = `
         <div class="card text-center form-cards-js text-dark" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">${res.data.location.name}</h5>
@@ -20,7 +19,8 @@ form.addEventListener('submit', (e)=>{
               <h3 class="card-title text-white">${res.data.current.temp_c} <sup>o</sup>C</h3>
             </div>
           </div>
-    `
+    `;
+    input.value = '';
     })
    .catch((error)=>{
     console.log(error)

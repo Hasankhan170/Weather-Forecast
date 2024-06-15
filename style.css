@@ -38,3 +38,23 @@ input{
     background-position: center;
     background-size: cover;
 }
+
+@media (max-width:560px){
+    input{
+        width: 300px;
+    }
+    form{
+        text-align: center;
+        margin: 20px; 
+    }
+}
+
+@media (max-width:365px){
+    input{
+        width: 200px;
+    }
+    form{
+        text-align: center;
+        margin: 20px; 
+    }
+}
