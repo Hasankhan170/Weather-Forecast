@@ -10,7 +10,7 @@ form.addEventListener('submit', (e)=>{
    .then((res)=>{
     console.log(res.data)
     const weatherCard = `
-        <div class="card text-center form-cards-js text-dark mt-3" style="width: 18rem;">
+        <div class="card text-center form-cards-js text-dark mt-4" style="width: 50rem;">
             <div class="card-body">
               <h5 class="card-title">${res.data.location.name}</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">${res.data.location.localtime} , ${res.data.location.country} , ${res.data.location.region}</h6>
