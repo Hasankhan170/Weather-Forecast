@@ -14,9 +14,9 @@ form.addEventListener('submit', (e)=>{
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">${res.data.location.name}</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">${res.data.location.localtime} , ${res.data.location.country}</h6>
+              <h6 class="card-subtitle mb-2 text-body-secondary">${res.data.location.localtime} , ${res.data.location.country} , ${res.data.location.region}</h6>
               <img width="160px" src=${res.data.current.condition.icon} alt='weatherImg' />
-              <h3 class="card-title">${res.data.current.temp_c} C</h3>
+              <h3 class="card-title">${res.data.current.temp_c} <sup>o</sup>C</h3>
             </div>
           </div>
     `
