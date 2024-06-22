@@ -6,7 +6,7 @@ const div = document.querySelector('.form-cards')
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
-    axios(`http://api.weatherapi.com/v1/current.json?key=b90421cd7596432bbb2144327241406&q=${input.value}&aqi=no`)
+    axios(`https://api.weatherapi.com/v1/current.json?key=b90421cd7596432bbb2144327241406&q=${input.value}&aqi=no`)
    .then((res)=>{
     console.log(res.data)
     const weatherCard = `
